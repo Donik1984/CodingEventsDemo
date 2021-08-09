@@ -1,0 +1,20 @@
+﻿@model List<CodingEventsDemo.Models.EventCategory>
+
+    <h1>All Categories</h1>
+    <table>
+        <tr>
+            <th>Category Name</th>
+        </tr>
+        <p>
+            <a asp-controller="EventCategory" asp-action="Create">Create Event Category</a>
+        </p>
+        <p>
+            <a asp-controller="EventCategory" asp-action="Delete">Delete Event Category</a>
+        </p>
+        @foreach (EventCategory category in Model)
+        {
+            <tr>
+                <td>@category.Name</td>
+            </tr>
+        }
+    </table>
