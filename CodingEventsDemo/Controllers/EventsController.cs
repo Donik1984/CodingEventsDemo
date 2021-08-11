@@ -29,6 +29,7 @@ namespace coding_events_practice.Controllers
 
         public IActionResult Add()
         {
+            //List<EventCategory> events = context.Events.ToList();
             AddEventViewModel addEventViewModel = new AddEventViewModel();
 
             return View(addEventViewModel);
